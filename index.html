@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS DOM Practice</title>
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="mt-12 mx-8 text-center">
+      <h2 class="text-3xl font-semibold mb-3 text-primary">Add Book To The Table</h2>
+      <form onsubmit="return false" class="flex justify-center items-center" id="form">
+        <input type="text" name="text" id="input" placeholder="Write book name" required class="input input-bordered w-full max-w-[400px]">
+        <button type="reset" class="p-4 text-xl">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button type="submit" class="btn btn-primary text-white px-6" id="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="mt-12 mx-8 text-center">
+      <table class="border border-secondary [&_th]:border [&_th]:border-secondary [&_td]:border [&_td]:border-secondary [&_th]:p-2 [&_td]:p-2 w-full max-w-[600px] mx-auto">
+        <thead class="bg-primary text-white">
+          <tr>
+            <th>S.N.</th>
+            <th>Book Name</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
